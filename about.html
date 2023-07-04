@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About the Artist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scroll bars on the body */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff; /* Set the background color to fully opaque white */
+            padding: 10px 20px;
+            box-sizing: border-box;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            margin-right: 20px; /* Add right margin to create space between title and links */
+        }
+
+        .navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin-left: 10px;
+        }
+
+        .navbar-links li:first-child {
+            margin-left: 0;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+
+        .navbar-links a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+			background-image: url("images/BG.png");
+            background-size: cover;
+            padding-top: 60px; /* Adjust the top padding to account for the navbar height */
+            overflow: hidden; /* Hide scroll bars on the container */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Hide scroll bars on the overlay */
+        }
+
+        .textbox {
+            max-width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="navbar-title">BARNEYS BIG TOE</h1>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="commissions.html">Commissions</a></li>
+            <li><a href="donations.html">Donations</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="overlay">
+            <div class="textbox">
+                <h1>About the Artist</h1>
+                <p>Insert your artist's biography or information about their artistic journey here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
